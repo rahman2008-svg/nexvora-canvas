@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --canvas-bg: #f8f9fa;
+    --canvas-dot: #d1d5db;
+    --canvas-ui-bg: #ffffff;
+    --canvas-ui-border: #e2e8f0;
+    --canvas-ui-text: #1e293b;
+  }
+
+  .dark {
+    --canvas-bg: #131416;
+    --canvas-dot: #333842;
+    --canvas-ui-bg: #1e2025;
+    --canvas-ui-border: #2e333d;
+    --canvas-ui-text: #f1f5f9;
+  }
+}
+
+.font-draw {
+  font-family: 'Shantell Sans', 'Caveat', cursive, sans-serif;
+}
+
+.font-sans-clean {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-mono-clean {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.4);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.7);
+}
+
+/* Canvas dot grid */
+.canvas-grid-pattern-light {
+  background-image: radial-gradient(#cbd5e1 1.2px, transparent 1.2px);
+}
+
+.canvas-grid-pattern-dark {
+  background-image: radial-gradient(#334155 1.2px, transparent 1.2px);
+}
+
+/* Prevent unwanted selection during drag */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

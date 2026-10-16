@@ -1,0 +1,6 @@
+{
+  "name": "NexVora Canvas",
+  "description": "Infinite canvas collaborative drawing, sketching, and diagramming tool developed by Prince AR Abdur Rahman, published by NexVora Lab's Ofc.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
